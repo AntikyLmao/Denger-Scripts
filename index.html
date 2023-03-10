@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+  <link href="Style/style.css" rel="stylesheet" type="text/css" />
+  <link rel="icon" type="image/x-icon" href="Assets/Logos/logo.png">
+  <script type='text/javascript'>
+  window.smartlook||(function(d) {
+    var o=smartlook=function(){ o.api.push(arguments)},h=d.getElementsByTagName('head')[0];
+    var c=d.createElement('script');o.api=new Array();c.async=true;c.type='text/javascript';
+    c.charset='utf-8';c.src='https://web-sdk.smartlook.com/recorder.js';h.appendChild(c);
+    })(document);
+    smartlook('init', '4a88dc7c386ff5502adc974f5b85f57cbdd22663', { region: 'eu' });
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-7Y1VK8138T"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-7Y1VK8138T');
+</script>
+
+</script>
+  <title>Denger Scripts</title>
+</head>
+
+<body onload="LoaderStart()">
+  <script src="Scripts/Script.js"></script>
+  <center class='whatthefuck'>
+    <div id="loader"></div>
+  <center>
+  <div style="display:none;" id="myDiv" class="animate-bottom">
+  <!-- start of navigation bar -->
+  <div id="navbar-wrapper">
+    <!--logo-->
+    <button onclick="YoutubeChannelOpenLink()" id="navbar-logo">
+      <img src="Assets/Logos/logo.png" />
+    </button>
+    <!--logo-->
+    <!--title-->
+    <h1 id="navbar-header">Denger Scripts</h1>
+    <!--title-->
+    <!--buttons-->
+    <div id="navbar-buttons">
+      <a class="active">Home</a>
+      <a href="Scripts.html">Scripts</a>
+      <a class="youtube"href="https://www.youtube.com/@Denger", target="_blank">Youtube</a>
+      <a href="https://discord.gg/BWHm3yG7X4" target="_blank">Discord</a>
+      <a href="#about">About</a>
+    </div>
+    <!--buttons-->
+  </div>
+  <!-- end of navigation bar -->
+  <div class="main-grid-container">
+    
+  <div class="main-item1">
+      <h2>Announcments</h1>
+      <p1>March-9-2023 : Every script is reportedly working.</p1>
+      <br>
+      <p1>March-8-2023 : Made Website and made it look sexy.</p1>
+  </div>
+    
+  <div class="main-item2">
+    <div class="item1-div">
+      <h3 class="item-headers">Trending Script</h3>
+      <img src="Assets/ScriptScreenshots/InfiniteYield.png">
+      <br>
+      <button class="button-64" id="infinite" onclick="OpenInfiniteYield()"><span class="text">Get Script</span></button>
+    </div>
+  </div>
+
+    
+  <div class="main-item3">
+    <iframe class="script-discord-embedded" 
+            src="https://discordapp.com/widget?id=1083223953302106223&theme=dark" width="100%"                   height="100%" allowtransparency="true" frameborder="0" 
+            sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts">       </iframe>
+  </div>  
+
+    
+  <div class="main-item4">
+    <div class="item2-div">
+      <h3 class="item-headers">Latest Video</h3>
+      <iframe width="400" height="240" src="https://www.youtube.com/embed/bV-kLVUy48w"                             title="Latest Video" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; 
+              picture-in-picture; web-share" allowfullscreen>
+      </iframe>
+      <button class="button-64" id="youtube" onclick="YoutubeVideoOpenLink()">
+        <span class="text">Go to video</span>
+      </button>
+    </div>
+  </div>
+  <div class="main-item5">
+    <div class="item3-div">
+      <h3 class="item-headers">Latest Script</h3>
+      <img src="Assets/ScriptScreenshots/OwlHub.png">
+      <button class="button-64" id="owl" role="button"><span class="text">Get Script</span></button>
+    </div>
+  </div>
+  </div>
+</div>
+  
+</body>
+
+</html>
