@@ -1,6 +1,3 @@
-/* nigga nigga nigga */
-
-
 html {
   height: 100%;
   width: 100%;
@@ -36,7 +33,7 @@ body{
   border: 0px none #000000;
 }
 
-.whatthefuck{
+.Loader-Wrapper{
   position: relative;
   display: flex;
   align-items: center;
@@ -129,15 +126,17 @@ body{
 
 /* start of title */
 #navbar-header {
-  position: fixed;
-  left: 39%;
-  top: 15px;
+  position: relative;
+  right: 2%;
+  top: 14%;
   color: white;
-  font-size: 50px;
+  font-size: 300%;
   font-family: 'Roboto Mono', monospace;
   border: 0px;
   padding: 0px;
   margin: 0px;
+  max-width: 600%;
+  max-height: 20%;
 }
 
 /* end of title */
@@ -146,7 +145,11 @@ body{
 #navbar-buttons {
   position: fixed;
   top: 16px;
-  right: 80px;
+  right: -60%;
+  max-width: 50%;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in-out;
 }
 
 #navbar-buttons a {
@@ -155,9 +158,10 @@ body{
   text-align: center;
   padding: 20px;
   text-decoration: none;
-  font-size: 17px;
+  font-size: 90%;
   border-radius: 5px;
   font-family: 'Roboto Mono', monospace;
+  font-weight: 700;
 }
 
 #navbar-buttons a:hover {
@@ -167,8 +171,65 @@ body{
 
 #navbar-buttons a.active {
   background-color: white;
-  color: black;
+  color: rgb(26, 26, 26);
 }
+
+
+@keyframes open{
+  0% {right: 2px;}
+  100% {right: 30%}
+}
+@keyframes openbuttons{
+  0% {right: -60%}
+  100% {right: 1%}
+}
+@keyframes close{
+  0% {right: 30px;}
+  100% {right: 2%}
+}
+@keyframes closebuttons{
+  0% {right: 1%}
+  100% {right: -60%}
+}
+
+
+
+#Navbar-Button{
+  background-color: transparent;
+  position: absolute;
+  z-index: 1000;
+  aspect-ratio: 1/1;
+  height: 40%;
+  right: 2%;
+  border: 0px;
+  top: 28%;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in-out;
+}
+
+#Navbar-Button img{
+  position: absolute;
+  z-index: 10000;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  margin: 0px;
+  padding: 0px;
+}
+
+#navbar-cluster{
+  background-color: #00DDEB;
+  width: fit-content;
+  height: fit-content;
+  
+}
+
+
+
+
+
+
 
 /* end of navbar */
 /* end of navbar */
@@ -322,19 +383,19 @@ body{
   touch-action: manipulation;
   white-space: nowrap;
   cursor: pointer;
-  right: -90px;
+  right: -15%;
   top: 10px;
 }
 
 #owl {
    position: absolute;
-   right: 600px;
+   right: 30%;
    top: 570px;
 }
 
 #youtube {
    position: absolute;
-   right: 59.6%;
+   right: 58.6%;
    top: 570px;
 }
 
