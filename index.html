@@ -1,124 +1,37 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
-  <link href="Style/style.css" rel="stylesheet" type="text/css" />
-  <link rel="icon" type="image/x-icon" href="Assets/Logos/logo.png">
-  <title>Denger Scripts</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Denger's Scripts</title>
+    <link rel="shortcut icon" href="Assets/Logos/BGLogo.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
 </head>
 
-<body onload="LoaderStart()">
+<body>
+    <div class="main-page-container">
+        <nav class="main-page-navbar-wrapper">
+            <button class="main-page-navbar-logo">
+                <img src="Assets/Logos/NoBGLogo.png">
+            </button>
+            <header class="main-page-navbar-header">Denger</header>
+            <a href="javascript:void(0);" class="main-page-navbar-menu-icon" onclick="NavBarOpenClose()">
+                <img src="Assets/Icons/Menu.png">
+            </a>
+        </nav>
+        <div class="main-page-navbar-buttons">
+            <center>
+                <a class="active">Home</a>
+                <a href="Scripts.html">Scripts</a>
+                <a class="youtube" href="https://www.youtube.com/@Denger" , target="_blank">Youtube</a>
+                <a href="https://discord.gg/BWHm3yG7X4" target="_blank">Discord</a>
+            </center>
+        </div>
 
-  <script src="Scripts/Script.js"></script>
-
-
-
-  <center class='Loader-Wrapper'>
-    <div id="loader"></div>
-  <center>
-
-
-
-  <div style="display:none;" id="myDiv" class="animate-bottom">
-
-
-
-  <!-- start of navigation bar -->
-  <div id="navbar-wrapper">
-
-
-
-    <!--logo-->
-    <button onclick="YoutubeChannelOpenLink()" id="navbar-logo">
-      <img src="Assets/Logos/logo.png" />
-    </button>
-    <!--logo-->
-
-
-
-    <!--title-->
-    <h1 id="navbar-header">Denger Scripts</h1>
-    <!--title-->
-
-
-    <div id="navbar-cluster">
-      <button id="Navbar-Button" onclick="openNavbar()">
-        <img src="Assets/Logos/Menu.png">
-      </button>
     </div>
-
-    <!--buttons-->
-    <div id="navbar-buttons">
-      <a class="active">Home</a>
-      <a href="Scripts.html">Scripts</a>
-      <a class="youtube"href="https://www.youtube.com/@Denger", target="_blank">Youtube</a>
-      <a href="https://discord.gg/BWHm3yG7X4" target="_blank">Discord</a>
-    </div>
-    <!--buttons-->
-
-
-  </div>
-  <!-- end of navigation bar -->
-
-
-
-
-
-
-
-  <div class="main-grid-container">
-    
-  <div class="main-item1">
-      <h2>Announcments</h1>
-      <p1>March-9-2023 : Every script is reportedly working.</p1>
-      <br>
-      <p1>March-8-2023 : Made Website and made it look sexy.</p1>
-  </div>
-    
-  <div class="main-item2">
-    <div class="item1-div">
-      <h3 class="item-headers">Trending Script</h3>
-      <img src="Assets/ScriptScreenshots/InfiniteYield.png">
-      <br>
-      <button class="button-64" id="infinite" onclick="OpenInfiniteYield()"><span class="text">Get Script</span></button>
-    </div>
-  </div>
-
-    
-  <div class="main-item3">
-    <iframe class="script-discord-embedded" 
-            src="https://discordapp.com/widget?id=1083223953302106223&theme=dark" width="100%"                   height="100%" allowtransparency="true" frameborder="0" 
-            sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts">       </iframe>
-  </div>  
-
-    
-  <div class="main-item4">
-    <div class="item2-div">
-      <h3 class="item-headers">Latest Video</h3>
-      <iframe width="400" height="240" src="https://www.youtube.com/embed/bV-kLVUy48w"                             title="Latest Video" frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; 
-              picture-in-picture; web-share" allowfullscreen>
-      </iframe>
-      <button class="button-64" id="youtube" onclick="YoutubeVideoOpenLink()">
-        <span class="text">Go to video</span>
-      </button>
-    </div>
-  </div>
-  <div class="main-item5">
-    <div class="item3-div">
-      <h3 class="item-headers">Latest Script</h3>
-      <img src="Assets/ScriptScreenshots/OwlHub.png">
-      <button class="button-64" id="owl" role="button"><span class="text">Get Script</span></button>
-    </div>
-  </div>
-  </div>
-</div>
-  
+    <script src="script.js"></script>
 </body>
 
 </html>
